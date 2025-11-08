@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>我们的OC合集</title>
+    <style>
+        body { font-family: 微软雅黑, Arial; max-width: 1000px; margin: 0 auto; padding: 20px; background: #f9f7f5; }
+        .page-title { text-align: center; color: #8b5a2b; margin: 30px 0; }
+        /* OC卡片：点卡片进对应主页 */
+        .oc-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+        .oc-card { background: white; text-align: center; padding: 20px; border-radius: 12px; box-shadow: 0 2px 10px #eee; cursor: pointer; transition: all 0.3s; }
+        .oc-card:hover { transform: translateY(-5px); box-shadow: 0 5px 15px #e8c4a0; }
+        .oc-card-avatar { width: 150px; height: 150px; border-radius: 50%; border: 3px solid #d4a066; margin: 0 auto; }
+        .oc-card-name { color: #8b5a2b; font-size: 20px; margin: 15px 0 5px; }
+        .oc-card-tag { color: #a67c52; font-size: 14px; }
+    </style>
+</head>
+<body>
+    <h1 class="page-title">✨ 我们的OC合集 ✨</h1>
+
+    <!-- OC选择卡片（加多少OC就复制多少个.card！） -->
+    <div class="oc-list">
+        <!-- OC1：点卡片跳OC1主页 -->
+        <a href="oc1-index.html" style="text-decoration: none;">
+            <div class="oc-card">
+                <img class="oc-card-avatar" src="莯鱼界面头像.png" alt="莯鱼">
+                <h3 class="oc-card-name">【OC名字】</h3>
+                <p class="oc-card-tag">【OC1标签：风系法师 | 17岁】</p>
+            </div>
+        </a>
+
+        <!-- OC2：点卡片跳OC2主页 -->
+        <a href="莯鱼/index.html" style="text-decoration: none;">
+            <div class="oc-card">
+                <img class="oc-card-avatar" src="莯鱼界面头像.png" alt="莯鱼">
+                <h3 class="oc-card-name">【莯鱼】</h3>
+                <p class="oc-card-tag">【标签：无敌的不明jk生物】</p>
+            </div>
+        </a>
+
+        <!-- OC3：点卡片跳OC3主页 -->
+        <a href="oc3-index.html" style="text-decoration: none;">
+            <div class="oc-card">
+                <img class="oc-card-avatar" src="oc3头像.jpg" alt="OC3名字">
+                <h3 class="oc-card-name">【OC3名字】</h3>
+                <p class="oc-card-tag">【OC3标签：治愈系精灵 | 永生】</p>
+            </div>
+        </a>
+
+        <!-- 加更多OC：复制上面的<a>标签，改oc4-index.html、oc4头像.jpg即可 -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>【OC名字】的个人主页</title>
+    <style>
+        body { font-family: 微软雅黑, Arial; max-width: 900px; margin: 0 auto; padding: 20px; background: #f9f7f5; }
+        /* OC头像区域 */
+        .oc-header { text-align: center; padding: 30px; background: white; border-radius: 12px; box-shadow: 0 2px 10px #eee; }
+        .oc-avatar { width: 200px; height: 200px; border-radius: 50%; /* 圆形头像 */ border: 4px solid #e8c4a0; }
+        .oc-name { color: #8b5a2b; font-size: 28px; margin: 15px 0 5px; }
+        .oc-title { color: #a67c52; font-size: 16px; margin: 0; }
+        /* 导航栏 */
+        .nav { text-align: center; margin: 25px 0; }
+        .nav a { margin: 0 20px; text-decoration: none; color: #8b5a2b; font-weight: bold; font-size: 15px; }
+        .nav a:hover { color: #d4a066; }
+        /* 信息卡片 */
+        .info-card { background: white; padding: 25px; border-radius: 12px; margin: 20px 0; box-shadow: 0 2px 10px #eee; }
+        .card-title { color: #8b5a2b; border-left: 4px solid #d4a066; padding-left: 15px; margin-top: 0; }
+        /* 图片展示区 */
+        .oc-pics { display: flex; gap: 20px; justify-content: center; margin: 20px 0; }
+        .oc-pic-item { width: 200px; border-radius: 8px; border: 2px solid #e8c4a0; }
+    </style>
+</head>
+<body>
+    <!-- OC头像+名字区域（重点改这里！） -->
+    <div class="oc-header">
+        <!-- 改src里的图片名，换成你的OC头像 -->
+        <img class="oc-avatar" src="莯鱼界面头像.png" alt="莯鱼">
+        <h1 class="oc-name">莯鱼个人信息</h1>
+        <p class="oc-title">还不太完善，笨鱼摸索中...</p>
+    </div>
+
+    <!-- 每个OC主页的导航栏都要改！ -->
+<div class="nav">
+    <a href="../oc-list.html">返回OC合集</a> <!-- 跳回总选择页 -->
+    <a href="oc1-index.html">OC1主页</a> <!-- 自己的主页 -->
+    <a href="oc1-info.html">OC1详情</a> <!-- 自己的详情 -->
+    <a href="oc1-gallery.html">OC1图集</a> <!-- 自己的图集 -->
+</div>
+    <!-- OC简介（改文字内容） -->
+    <div class="info-card">
+        <h2 class="card-title">OC一句话介绍</h2>
+        <p>【设定是无敌的不明生物，外表是一个16岁的jk少女】</p>
+    </div>
+
+    <!-- OC精选图（改图片） -->
+    <div class="info-card">
+        <h2 class="card-title">OC精选图</h2>
+        <div class="oc-pics">
+            <!-- 改src里的图片名，最多可以加N张，复制<img>标签就行 -->
+            <img class="oc-pic-item" src="oc图1.jpg" alt="OC图片1">
+            <img class="oc-pic-item" src="oc图2.jpg" alt="OC图片2">
+            <img class="oc-pic-item" src="oc图3.jpg" alt="OC图片3">
+        </div>
+    </div>
+</body>
+</html>
